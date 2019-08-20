@@ -7,6 +7,10 @@
 - Create a route that reverses the order of the words in a query parameter. For example, if I visit /reverse?sentence=Hello world, it should return an HTML page containing world Hello.
 - Write a unit test for the word reversing functionality of the above route. (Note that this will be easiest if you write a helper method for the word reversing, so that you can call that method for testing.)
 
+## Running Application
+- Application runs on localhost:8080
+- Dependencies are already install just run `gradle bootRun`
+
 ## Collaborative Efforts 
 Matt Stuhring  
 Renee Messick  
