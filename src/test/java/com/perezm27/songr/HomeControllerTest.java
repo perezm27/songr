@@ -9,8 +9,11 @@ public class HomeControllerTest {
     @Test
     public void reverseWords() {
         String test = "hello world";
-        System.out.println(test);
-
         assertEquals("world hello", HomeController.reverseWords(test));
+
+        String test2 = "Hi how are you";
+        assertEquals("you are how Hi", HomeController.reverseWords(test2));
+
+
     }
 }

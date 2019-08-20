@@ -1,13 +1,11 @@
 package com.perezm27.songr;
 
-import com.sun.org.apache.xml.internal.res.XMLErrorResources_tr;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestParam;
 
-import java.util.regex.Pattern;
 
 @Controller
 public class HomeController {
@@ -39,17 +37,18 @@ public class HomeController {
     }
 
 //  https://www.geeksforgeeks.org/reverse-words-given-string-java/
+//  Changed to StringBuilder for Optimization
     public static String reverseWords(String word) {
         String[] temp = word.split(" ");
-        String result = "";
+        StringBuilder result = new StringBuilder();
 
         for (int i = 0; i < temp.length; i++) {
             if (i == temp.length - 1)
-                result = temp[i] + result;
+                result.insert(0, temp[i]);
             else
-                result = " " + temp[i] + result;
+                result.insert(0, " " + temp[i]);
         }
-        return result;
+        return result.toString();
     }
 
 }
