@@ -23,7 +23,7 @@
     <div th:each="album : ${albums}">
 
         <h4 th:id="${album.title}" th:text="${album.title}">Album Title</h4>
-        <img th:id="${album.imageUrl}" th:src="${album.imageUrl}">
+        <img th:id="${album.imageUrl}" th:src="${album.imageUrl}" alt="Album Cover">
         <h5 th:id="${album.songCount}" th:text="${album.songCount}">Album Song Count</h5>
         <h5 th:id="${album.length}" th:text="${album.length}">Album Length in Seconds</h5>
 
