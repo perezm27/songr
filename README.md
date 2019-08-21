@@ -9,7 +9,7 @@
 
 ## Running Application
 - Application runs on localhost:8080
-- Dependencies are already install just run `gradle bootRun`
+- Dependencies are already install just run `./gradle bootRun`
 
 ## Collaborative Efforts 
 Matt Stuhring  
