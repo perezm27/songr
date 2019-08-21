@@ -18,3 +18,21 @@ Sapana Poudel
 
 ## Author 
 Melfi Perez
+
+
+## Lab 12: Spring MVC with Databases
+
+## Feature Task
+- Create an Album model.
+- An Album has a title, an artist, a songCount, a length (in seconds), and an imageUrl that is a link to that album’s art.
+- A user should be able to see information about all the albums on the site.
+- A user should be able to add albums to the site.
+
+## Running Application
+- Application runs on localhost:8080
+- Dependencies are already install just run `gradle bootRun`
+
+## Collaborative Efforts 
+Matt Stuhring  
+Renee Messick  
+Nick Paro

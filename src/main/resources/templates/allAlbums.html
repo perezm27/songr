@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Albums</title>
+</head>
+<body>
+    <h1>Albums</h1>
+    <div>
+        <form method="POST" action="/albums">
+            <fieldset>
+                <legend>Add a new Album</legend>
+           <label>Album Title:</label><input type="text" name="title" required/>
+           <label>Artist:</label><input  type="text" name="artist" required/>
+           <label>Song Count:</label><input type="number" name="songCount" required/>
+           <label>Song Length:</label><input type="number" name="length" required>
+           <label>Album Cover:</label><input type="url" name="imageUrl" required>
+            <input type="submit" />
+            </fieldset>
+        </form>
+    </div>
+
+    <div th:each="album : ${albums}">
+
+        <h4 th:id="${album.title}" th:text="${album.title}">Album Title</h4>
+        <img th:id="${album.imageUrl}" th:src="${album.imageUrl}">
+        <h5 th:id="${album.songCount}" th:text="${album.songCount}">Album Song Count</h5>
+        <h5 th:id="${album.length}" th:text="${album.length}">Album Length in Seconds</h5>
+
+        <p>
+            Created by: <span th:text="${album.artist}"></span>
+        </p>
+        </span>
+    </div>
+
+
+</body>
+</html>

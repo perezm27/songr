@@ -19,7 +19,6 @@ public class HomeController {
     @GetMapping("/hello")
     public String helloWorld(){
         System.out.println("Somebody got to the root");
-//  Needs to match exactly the filename of a template in resources/templates (templates = our views for our app)
         return "helloworld";
     }
 
