@@ -53,5 +53,5 @@ Nick Paro
 ## Collaborative Efforts 
 Matt Stuhring  
 Renee Messick  
-Nick Paro
+Nick Paro  
 Jack Kinne
