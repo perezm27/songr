@@ -28,7 +28,7 @@
         <h5 th:id="${album.length}" th:text="${album.length}">Album Length in Seconds</h5>
 
         <p>
-            Created by: <span th:text="${album.artist}"></span>
+            <a th:href="${ '/songs'}">Created by: <span th:text="${album.artist}"></span></a>
         </p>
         </span>
     </div>

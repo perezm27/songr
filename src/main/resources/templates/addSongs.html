@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>All Songs</title>
+</head>
+<body>
+    <h1 th:text="${song}"></h1>
+
+    <div th:each="song : ${songs}">
+        <h3 th:text="${song.title}"></h3>
+        <h3 th:text="${song.length}"></h3>
+        <h3 th:text="${song.trackNumber}"></h3>
+        <a th:href="${ '/albums'}"><h3 th:text="${song.album.title}"></h3></a>
+    </div>
+
+    <h2>Add a new Song to this Album</h2>
+    <form method="POST" th:action="${'/songs'}">
+        <fieldset>
+            <legend>Add a new Song</legend>
+            <label>Song Title:</label><input type="text" name="title" required/>
+            <label>Song Length:</label><input  type="number" name="length" required/>
+            <label>Track Number:</label><input type="number" name="trackNumber" required/>
+            <label>Album:</label><input type="text" name="album" required>
+            <input type="submit" />
+        </fieldset>
+    </form>
+</body>
+</html>
